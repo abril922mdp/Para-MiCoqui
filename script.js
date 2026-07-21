@@ -1,1 +1,3 @@
-console.log('Proyecto Para Coqui');
+function abrirCarta(){
+  document.getElementById("carta").classList.add("abierta");
+}
