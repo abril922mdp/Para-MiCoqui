@@ -1,3 +1,4 @@
+
 body{
 margin:0;
 background:#090909;
@@ -110,4 +111,17 @@ border-radius:15px;
 margin-top:25px;
 text-align:left;
 line-height:1.6;
-box-shadow:0 0 20px rgba(255
+box-shadow:0 0 20px rgba(255,255,255,0.2);
+
+opacity:0;
+transform:scale(0.8) translateY(40px);
+pointer-events:none;
+transition:all 1s ease;
+}
+
+/* CARTA ABIERTA */
+.carta.abierta{
+opacity:1;
+transform:scale(1) translateY(0);
+pointer-events:auto;
+}
