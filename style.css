@@ -31,49 +31,7 @@ h2{
 color:#c77dff;
 }
 
-.sobre{
-font-size:80px;
-cursor:pointer;
-margin-top:40px;
-animation:flotar 2s infinite ease-in-out;
-}
-
-.sobre p{
-font-size:18px;
-color:white;
-margin-top:10px;
-}
-
-@keyframes flotar{
-0%,100%{
-transform:translateY(0);
-}
-50%{
-transform:translateY(-10px);
-}
-}
-
-.carta{
-background:#fff8ef;
-color:#333;
-padding:30px;
-border-radius:15px;
-margin-top:25px;
-text-align:left;
-line-height:1.6;
-box-shadow:0 0 20px rgba(255,255,255,0.2);
-
-opacity:0;
-transform:scale(0.8) translateY(40px);
-pointer-events:none;
-transition:all 1s ease;
-}
-
-.carta.abierta{
-opacity:1;
-transform:scale(1) translateY(0);
-pointer-events:auto;
-}
+/* SOBRE */
 .sobre{
 width:220px;
 height:150px;
@@ -87,6 +45,7 @@ overflow:hidden;
 animation:flotar 2s infinite ease-in-out;
 }
 
+/* TAPA DEL SOBRE */
 .tapa{
 position:absolute;
 top:0;
@@ -101,6 +60,7 @@ transition:transform 1s ease;
 z-index:3;
 }
 
+/* HOJA */
 .hoja{
 position:absolute;
 width:180px;
@@ -112,6 +72,7 @@ transition:transform 1s ease;
 z-index:1;
 }
 
+/* ANIMACIÓN DEL SOBRE */
 .sobre:hover .tapa{
 transform:rotateX(180deg);
 }
@@ -128,3 +89,25 @@ text-align:center;
 color:white;
 font-size:18px;
 }
+
+/* MOVIMIENTO DEL SOBRE */
+@keyframes flotar{
+0%,100%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-10px);
+}
+}
+
+/* CARTA */
+.carta{
+background:#fff8ef;
+color:#333;
+padding:30px;
+border-radius:15px;
+margin-top:25px;
+text-align:left;
+line-height:1.6;
+box-shadow:0 0 20px rgba(255
