@@ -1,4 +1,3 @@
-
 body{
 margin:0;
 background:#090909;
@@ -73,12 +72,12 @@ transition:transform 1s ease;
 z-index:1;
 }
 
-/* ANIMACIÓN DEL SOBRE */
-.sobre:hover .tapa{
+/* ABRIR SOBRE AL TOCAR */
+.sobre.abierto .tapa{
 transform:rotateX(180deg);
 }
 
-.sobre:hover .hoja{
+.sobre.abierto .hoja{
 transform:translateY(-40px);
 }
 
