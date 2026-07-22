@@ -124,3 +124,59 @@ opacity:1;
 transform:scale(1) translateY(0);
 pointer-events:auto;
 }
+/* CORAZONES Y ESTRELLAS */
+.decoracion{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+pointer-events:none;
+overflow:hidden;
+z-index:5;
+}
+
+.decoracion span{
+position:absolute;
+font-size:25px;
+animation:caer 6s infinite linear;
+}
+
+.decoracion span:nth-child(1){
+left:10%;
+animation-delay:0s;
+}
+
+.decoracion span:nth-child(2){
+left:30%;
+animation-delay:1s;
+}
+
+.decoracion span:nth-child(3){
+left:50%;
+animation-delay:2s;
+}
+
+.decoracion span:nth-child(4){
+left:70%;
+animation-delay:3s;
+}
+
+.decoracion span:nth-child(5){
+left:90%;
+animation-delay:4s;
+}
+
+@keyframes caer{
+
+0%{
+transform:translateY(-50px) rotate(0deg);
+opacity:1;
+}
+
+100%{
+transform:translateY(100vh) rotate(360deg);
+opacity:0;
+}
+
+}
